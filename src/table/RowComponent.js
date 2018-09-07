@@ -94,12 +94,10 @@ export class RowComponent extends React.Component<Props> {
         }
         {
           <ButtonAdd
-              className={style.navButtons}
               addRowToTable={this.addRowToTable} />
         }
         {
           <ButtonDelete
-                className={style.navButtons}
                 deleteRowTable={this.deleteRowTable}
           />
         }
