@@ -1,0 +1,6 @@
+.red {
+    color: red;
+}
+.filled {
+    background: linear-gradient(to right, rgba(120, 120, 120, 1) 0%, rgba(120, 120, 120, 1) 100%) no-repeat;
+}

@@ -1,0 +1,21 @@
+.matrixTable, form {
+    font-family: Georgia, serif;
+    border: 6px solid #24943A;
+    background-color: #D4EED1;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+}
+.matrixTable td, .matrixTable th {
+    border: 1px solid #24943A;
+    cursor:pointer;
+}
+.matrixTable tfoot .links a {
+    display: inline-block;
+    background: #FFFFFF;
+    color: #24943A;
+    padding: 2px 8px;
+    border-radius: 5px;
+    cursor:pointer;
+}
