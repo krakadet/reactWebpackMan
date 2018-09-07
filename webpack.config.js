@@ -14,11 +14,7 @@ module.exports =  {
                     loader: "babel-loader",
                     options: {
                         presets: [
-                            "babel-preset-env",
-                            "babel-preset-es2015",
-                            "babel-preset-flow",
-                            "babel-preset-react",
-                            "babel-preset-stage-0"
+
                         ]
                     }
                 }
