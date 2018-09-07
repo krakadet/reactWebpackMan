@@ -8,8 +8,7 @@ type Props = {|
 |};
 
 export function ButtonDelete(props: Props) {
-  const handleClick = (event: SyntheticEvent<HTMLButtonElement>) => {
-    event.preventDefault();
+  const handleClick = () => {
     const { deleteRowTable } = props;
     deleteRowTable();
   };

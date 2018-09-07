@@ -8,7 +8,6 @@ import Time from './Time';
 import { formActions, mergeActionsToProps } from 'redux-pure-form';
 import generator from './generatorForTable';
 import style from "../style/buttons.css";
-import ButtonDelete from "../table/ButtonDelete";
 
 type Props = {|
     +createTableAction: Function,
@@ -18,9 +17,9 @@ type Props = {|
 },
 +profile: {
     +name: string,
-        +rowValue: number,
-        +columnValue: number,
-        +lightValue: number,
+    +rowValue: number,
+    +columnValue: number,
+    +lightValue: number,
 }
 |};
 
@@ -81,7 +80,6 @@ export class InputValuesComponent extends React.Component<Props, State> {
             valueColumn: columnValue,
             lightValue,
         });
-        console.log('lightValue====>>>>', lightValue);
         const { createTableAction } = this.props;
         createTableAction(rowValue, columnValue, lightValue);
     };
@@ -116,8 +114,6 @@ export class InputValuesComponent extends React.Component<Props, State> {
 
 
     render() {
-        console.log('this.props.fieldAttrs====>>>>', this.props.fieldAttrs);
-        console.log('this.props====>>>>', this.props.profile);
         return (
             <div>
                 <br />
