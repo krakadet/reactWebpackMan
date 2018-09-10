@@ -113,7 +113,6 @@ export class InputValuesComponent extends React.Component<Props, State> {
 
     render() {
         const { profile } =this.props;
-        const {columnValue} = profile.columnValue;
         return (
             <div>
                 <br />
@@ -124,7 +123,7 @@ export class InputValuesComponent extends React.Component<Props, State> {
                     <input
                         type="number"
                         name="profile.columnValue"
-                        value={columnValue}
+                        value={this.props.profile.columnValue}
                         {...this.props.fieldAttrs}
                         onChange={e => this.handle(e, 'profile')}
                     />
@@ -149,8 +148,8 @@ export class InputValuesComponent extends React.Component<Props, State> {
                 </form>
                 {/*<PureModal*/}
                     {/*header="Create table "*/}
-                    {/*// footer={<div><button>Cancel</button><button>Save</button></div>}*/}
-                    {/*onClose={() => {*/}
+                    {/*footer={<div><button>Cancel</button><button>Save</button></div>}*/}
+                     {/*onClose={() => {*/}
                         {/*console.log('handle closing');*/}
                         {/*return true;*/}
                     {/*}}*/}
