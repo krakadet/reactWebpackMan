@@ -3,12 +3,10 @@ import React from 'react';
 
 const Time = () => {
   function weekDay(date) {
-    const days = ['неділя', 'понеділок', 'вівторок', 'середа', 'четвер', 'пятниця', 'субота'];
+    const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
     return days[date.getDay()];
   }
   const date = new Date();
-  console.log('date====>>>>', date);
-  console.log('getDate()====>>>>', date.getDate());
   return (
     <div>
       <p>

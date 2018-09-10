@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 // import PureModal from 'react-pure-modal';
 import { createTableAction, updateInputsValue } from '../action/action';
 //import 'react-pure-modal/dist/react-pure-modal.min.css';
-import Time from './Time';
 import { formActions, mergeActionsToProps } from 'redux-pure-form';
 import generator from './generatorForTable';
 import style from "../style/buttons.css";
@@ -60,7 +59,6 @@ export class InputValuesComponent extends React.Component<Props, State> {
                 const { updateInputsValue } = this.props;
                 updateInputsValue(columnCount, rowCount, lightCount);
             })
-            .then()
             .catch((error) => {
                 console.log('error', error);
             });
@@ -120,7 +118,7 @@ export class InputValuesComponent extends React.Component<Props, State> {
             <div>
                 <br />
                 <form>
-                    <Time />
+
                     <h3>New input which use redux-pure-form</h3>
                     <br />
                     <input
