@@ -114,6 +114,8 @@ export class InputValuesComponent extends React.Component<Props, State> {
 
 
     render() {
+        const { profile } =this.props;
+        const {columnValue} = profile.columnValue;
         return (
             <div>
                 <br />
@@ -121,11 +123,10 @@ export class InputValuesComponent extends React.Component<Props, State> {
                     <Time />
                     <h3>New input which use redux-pure-form</h3>
                     <br />
-
                     <input
                         type="number"
                         name="profile.columnValue"
-                        value={this.props.profile.columnValue}
+                        value={columnValue}
                         {...this.props.fieldAttrs}
                         onChange={e => this.handle(e, 'profile')}
                     />
